@@ -1,38 +1,83 @@
-.App {
+html {
+  background-color: #ecf7f7;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  margin: 1rem;
+  background: white;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
+  outline-color: black;
+  outline-style: double;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  width: 30%;
+  justify-content: center;
+}
+
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
+  transform: translate3D(0, -2px, 0);
+}
+
+h3 {
+  margin-left: 20px;
+  margin-top: 5px;
+  color: orange;
+  margin-bottom: 0px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h4 {
+  margin-top: 10px;
+  color: #282c34;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+p {
+  margin-top: 0px;
+}
+
+.volume {
+  display: inline-block;
+  width: 40%;
+  overflow: hidden;
+  margin-left: 5%;
+  text-align: center;
+}
+
+.change {
+  display: inline-block;
+  width: 40%;
+  overflow: hidden;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.negative {
+  color: red;
+}
+
+.positive {
+  color: green;
 }
